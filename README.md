@@ -5,3 +5,5 @@ The project is divided into the following subparts:
 2. Soil pH range determination using MATLAB
 3. Soil Moisture Detection using Arduino Uno and FC-28 Sensor
 4. Displaying soil properties on an Android Application
+
+-Shambhavi Sabhahit
