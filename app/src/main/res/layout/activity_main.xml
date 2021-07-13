@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout      android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/farm4">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/main_toolbar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Home"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="419dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:text="Grow Smart is an app designed to help farmers in and around Pune, to give them a brief overview of the type of soil present in various locations and the suggested crops to be grown on the same."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="230dp"
+            android:layout_height="224dp"
+            android:layout_marginStart="165dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/rounded1"
+            android:fontFamily="serif"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:text="The soil types have been determined based on samples collected from various locations in Pune. The image of the sample has been processed in MATLAB using image classification to determine the soil type.
+The farmer can also get an idea of the pH range of the soil through this app."
+            android:textColor="#1F0113 "
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="211dp"
+            android:layout_height="187dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="184dp"
+            android:layout_marginRight="184dp"
+            android:background="@drawable/rounded2"
+            android:fontFamily="serif"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:text="The humidity of the soil sample at the time of collection has also been presented. The humidity has been found using
+            an Arduino UNO controller and an FC-28 Soil Moisture Sensor, while making use of the open source Arduino IDE."
+            android:textColor="#030A48"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="410dp"
+            android:layout_height="81dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Use the Navigation Drawer to see details of the soil type present in various locations in Pune."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:layout_width="300.0dip"
+        android:layout_height="fill_parent">
+
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
