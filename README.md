@@ -6,6 +6,6 @@ The project is divided into the following subparts:
 3. Soil Moisture Detection using Arduino Uno and FC-28 Sensor
 4. Displaying soil properties on an Android Application
 
-The source codes can be found in the master branch
+The source codes for the android application can be found in the master branch
 
 -Shambhavi Sabhahit
